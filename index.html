@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.box {
+	width: 280px;
+	height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Inconsolata", monospace;
+	font-size: 28px;
+	border: 1px solid #c39f76;
+	box-sizing: border-box;
+}
+.box {
+    --c:#fecd3b; 
+	overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.box:before {
+    content: "Hello, it's the yellow garbage collector";
+    color: #ffffff00;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(0deg,#ffffff00 0px,var(--c) 0px),linear-gradient(180deg,#ffffff00 0px,var(--c) 0px) ,linear-gradient( var(--c) ,var(--c));
+    background-size: 30px 30px,30px 30px, 30px 60px;
+    background-position: 30px 0px, 30px 30px, 0px 0px;
+    background-repeat: no-repeat;
+    left: -65px;
+    border-radius: 30px;
+    animation: eat 1.4s linear infinite,move 29.4s linear infinite;
+    align-items: center;
+}
+
+.box:after {
+    content: 'hello world';
+    animation: ate 29.4s steps(1) infinite;
+    letter-spacing: 3px;
+    align-items: center;
+}
+
+@keyframes move {
+    from {
+        left: -66px;
+    }
+
+    to {
+        left: 292px;
+    }
+}
+
+@keyframes ate {
+    0% {
+        content: 'hello world';
+    }
+
+    4.761904761904762% {
+        content: 'hello world';
+    }
+
+    9.523809523809524% {
+        content: 'hello world';
+    }
+
+    14.285714285714285% {
+        content: 'hello world';
+    }
+
+    19.047619047619047% {
+        content: '\0a0 ello world';
+    }
+
+    23.80952380952381% {
+        content: '\0a0\0a0 llo world';
+    }
+
+    28.57142857142857% {
+        content: '\0a0\0a0\0a0 lo world';
+    }
+
+    33.333333333333336% {
+        content: '\0a0\0a0\0a0\0a0 o world';
+    }
+
+    38.095238095238095% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0 world';
+    }
+
+    42.857142857142854% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0 world';
+    }
+
+    47.61904761904762% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0 orld';
+    }
+
+    52.38095238095238% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0 rld';
+    }
+
+    57.14285714285714% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0 ld';
+    }
+
+    61.904761904761905% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0 d';
+    }
+
+    66.66666666666667% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    71.42857142857143% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    76.19047619047619% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    80.95238095238095% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    85.71428571428571% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    90.47619047619048% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    95.23809523809524% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+
+    100% {
+        content: '\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0';
+    }
+}
+
+@keyframes eat {
+    0% {
+        background-image: linear-gradient(-0deg,#ffffff00 0px,var(--c) 0px) ,linear-gradient(180deg,#ffffff00 0px,var(--c) 0px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    10% {
+        background-image: linear-gradient(-9.6deg,#ffffff00 5px,var(--c) 6px) ,linear-gradient(189.6deg,#ffffff00 5px,var(--c) 6px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    20% {
+        background-image: linear-gradient(-19.5deg,#ffffff00 10px,var(--c) 11px) ,linear-gradient(199.5deg,#ffffff00 10px,var(--c) 11px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    30% {
+        background-image: linear-gradient(-30.1deg,#ffffff00 15px,var(--c) 16px) ,linear-gradient(210.1deg,#ffffff00 15px,var(--c) 16px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    40% {
+        background-image: linear-gradient(-42deg,#ffffff00 20px,var(--c) 21px) ,linear-gradient(222deg,#ffffff00 20px,var(--c) 21px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    50% {
+        background-image: linear-gradient(-56.5deg,#ffffff00 25px,var(--c) 26px) ,linear-gradient(236.5deg,#ffffff00 25px,var(--c) 26px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    60% {
+        background-image: linear-gradient(-42deg,#ffffff00 20px,var(--c) 21px) ,linear-gradient(222deg,#ffffff00 20px,var(--c) 21px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    70% {
+        background-image: linear-gradient(-30.1deg,#ffffff00 15px,var(--c) 16px) ,linear-gradient(210.1deg,#ffffff00 15px,var(--c) 16px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    80% {
+        background-image: linear-gradient(-19.5deg,#ffffff00 10px,var(--c) 11px) ,linear-gradient(199.5deg,#ffffff00 10px,var(--c) 11px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    90% {
+        background-image: linear-gradient(-9.6deg,#ffffff00 5px,var(--c) 6px) ,linear-gradient(189.6deg,#ffffff00 5px,var(--c) 6px) ,linear-gradient( var(--c) ,var(--c));
+    }
+
+    100% {
+        background-image: linear-gradient(-0deg,#ffffff00 0px,var(--c) 0px) ,linear-gradient(180deg,#ffffff00 0px,var(--c) 0px) ,linear-gradient( var(--c) ,var(--c));
+    }
+}
+</style>
+<script type="text/javascript">
+	
+</script>
+<body>
+<div class="box"></div>
+</body>
+</html>
